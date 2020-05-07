@@ -1,0 +1,5 @@
+$DATA1 SOURCE='HSPICE' VERSION='K-2015.06-2 linux64',,
+$OPTION MEASFORM=3,,
+.TITLE 'lab 1 problem 1a',,
+tphl_inv,temper,alter#
+1.76E-09,25,1

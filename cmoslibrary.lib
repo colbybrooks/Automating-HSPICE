@@ -1,0 +1,318 @@
+﻿.lib nominal
+*  This file is for NOMINAL conditions.
+*
+*  CMOS transistor models
+*       channel length                          0.35um ... 15um (NMOS)
+*                                               0.35um ... 15um (PMOS)
+*       channel width                           >= 1um
+*       nominal parameter values:
+*               threshold                       0.60V  (NMOS)
+*                                               0.85V  (PMOS)
+*               oxide thickness                 6.5nm
+*       worst case tolerances (used in worst case models):
+*               channel length                  +/- 0.05um
+*               width                           +/- 0.05um
+*               oxide thickness                 +/- 0.5nm
+*               threshold voltage               +/- 40mV  (NMOS)
+*                                               +/- 60mV  (PMOS)
+*
+.model nmos nmos level = 49
++ version = 3.11          acm     =  3             hdif    =  0.5e-6
++ mobmod  =  1.000000e+00  capmod  =  1.000000e+00  nqsmod  =  0.000000e+00  
++ tox     =  6.500000e-09  cdsc    =  1.000000e-10  cdscb   =  0.000000e+00  
++ cdscd   =  3.146578e-03  cit     = -1.165567e-03  nfactor =  2.067847e+00  
++ xj      =  2.000000e-07  vsat    =  1.733115e+05  at      =  4.587946e+04  
++ a0      =  1.208623e+00  ags     =  2.664144e-01  a1      =  0.000000e+00  
++ a2      =  3.926521e-01  keta    = -5.969015e-03  nch     =  3.053200e+17  
++ k1      =  7.823191e-01  kt1     = -2.968857e-01  kt1l    =  6.948321e-09  
++ kt2     = -2.439718e-02  k2      = -5.976393e-02  k3      = -2.348052e+00  
++ k3b     = -2.995700e+00  w0      =  0.000000e+00  nlx     =  2.343014e-07  
++ dvt0    =  1.904429e+01  dvt1    =  8.095353e-01  dvt2    =  6.252991e-03  
++ dvt0w   =  0.000000e+00  dvt1w   =  0.000000e+00  dvt2w   =  0.000000e+00  
++ drout   =  5.600000e-01  dsub    =  5.891755e-01  vth0    =  4.452273e-01  
++ ua      = -1.085785e-09  ua1     =  2.451017e-09  ub      =  2.210053e-18  
++ ub1     = -2.617479e-18  uc      =  3.755569e-11  uc1     =  2.640885e-13  
++ u0      =  3.324764e-02  ute     = -1.230449e+00  voff    = -8.793706e-02  
++ delta   =  9.688553e-03  rdsw    =  4.385596e+02  prwg    =  1.000000e-01  
++ prwb    = -7.964250e-02  prt     = -4.162666e+01  eta0    =  1.722893e-01  
++ etab    = -5.113721e-02  pclm    =  9.585992e-01  pdiblc1 =  2.537726e-12  
++ pdiblc2 = -3.312959e-04  pdiblcb = -1.000000e-03  pscbe1  =  5.656369e+08  
++ pscbe2  =  1.000000e-03  pvag    =  1.000001e-12  wr      =  9.107508e-01  
++ dwg     = -7.427878e-09  dwb     = -3.328336e-09  b0      =  1.598826e-07  
++ b1      =  5.141988e-17  alpha0  =  0.000000e+00  beta0   =  3.000000e+01  
++ elm     =  5.000000e+00  cgsl    =  0.000000e+00  cgdl    =  0.000000e+00  
++ ckappa  =  6.000000e-01  cf      =  9.056200e-11  clc     =  1.000000e-07  
++ cle     =  6.000000e-01  tnom    =  2.500000e+01  cgso    =  1.590000e-10  
++ cgdo    =  1.590000e-10  cgbo    =  0.000000e+00  xpart   =  1.000000e+00  
++ rsh     =  0.000000e+00  pb      =  5.112000e-01  mj      =  3.872000e-01  
++ mjsw    =  3.872000e-01  pbsw    =  5.112000e-01  cj      =  8.488000e-04  
++ cjsw    =  4.896000e-10  lint    =  2.345145e-09  ll      =  1.382235e-09  
++ lln     =  2.000000e-01  lw      =  0.000000e+00  lwn     =  0.000000e+00  
++ lwl     =  0.000000e+00  wint    =  1.347400e-07  wl      =  0.000000e+00  
++ wln     =  1.000000e+00  ww      = -7.781819e-14  wwn     =  1.000000e+00  
++ wwl     =  0.000000e+00  nlev    =  2.000000e+00  kf      =  0.500000e-25
+
+.model pmos pmos level = 49
++ version =  3.11          acm     =  3             hdif    =  0.5e-6
++ mobmod  =  1.000000e+00  capmod  =  1.000000e+00  nqsmod  =  0.000000e+00  
++ tox     =  6.500000e-09  cdsc    =  1.000000e-10  cdscb   =  0.000000e+00  
++ cdscd   =  0.000000e+00  cit     =  2.849258e-03  nfactor =  0.000000e+00  
++ xj      =  2.000000e-07  vsat    =  1.235253e+05  at      =  0.000000e+00  
++ a0      =  5.534111e-01  ags     =  0.000000e+00  a1      =  0.000000e+00  
++ a2      =  4.000000e-01  keta    = -4.742392e-03  nch     =  1.198869e+17  
++ k1      =  5.036882e-01  kt1     = -4.972940e-01  kt1l    =  0.000000e+00  
++ kt2     = -4.796538e-02  k2      =  1.710970e-02  k3      = -1.532555e+00  
++ k3b     = -1.426295e-01  w0      = -5.128171e-07  nlx     =  1.500000e-07  
++ dvt0    =  1.318457e+00  dvt1    =  2.383284e-01  dvt2    =  0.000000e+00  
++ dvt0w   =  0.000000e+00  dvt1w   =  0.000000e+00  dvt2w   =  0.000000e+00  
++ drout   =  3.972895e-01  dsub    =  4.287821e-01  vth0    = -7.891688e-01  
++ ua      = -7.838913e-10  ua1     =  4.158887e-09  ub      =  1.416209e-18  
++ ub1     = -3.635865e-18  uc      = -3.193134e-11  uc1     =  0.000000e+00  
++ u0      =  8.644306e-03  ute     =  0.000000e+00  voff    = -1.619864e-01  
++ delta   =  1.000000e-02  rdsw    =  1.393589e+03  prwg    = -7.131702e-02  
++ prwb    = -9.573077e-02  prt     =  0.000000e+00  eta0    =  5.324062e-02  
++ etab    =  0.000000e+00  pclm    =  1.294956e+00  pdiblc1 =  1.272241e-02  
++ pdiblc2 =  5.045117e-04  pdiblcb = -8.715370e-03  pscbe1  =  4.803844e+08  
++ pscbe2  =  1.000000e-08  pvag    =  0.000000e+00  wr      =  8.585317e-01  
++ dwg     = -1.637238e-08  dwb     = -3.444345e-09  b0      =  0.000000e+00  
++ b1      =  1.000000e-04  alpha0  =  0.000000e+00  beta0   =  3.000000e+01  
++ elm     =  5.000000e+00  cgsl    =  0.000000e+00  cgdl    =  0.000000e+00  
++ ckappa  =  6.000000e-01  cf      =  9.056200e-11  clc     =  1.000000e-07  
++ cle     =  6.000000e-01  tnom    =  2.500000e+01  cgso    =  4.035600e-10  
++ cgdo    =  4.035600e-10  cgbo    =  0.000000e+00  xpart   =  1.000000e+00  
++ rsh     =  0.000000e+00  pb      =  9.316000e-01  mj      =  4.845000e-01  
++ mjsw    =  4.845000e-01  pbsw    =  9.316000e-01  cj      =  1.117000e-03  
++ cjsw    =  4.764000e-10  lint    =  5.034766e-08  ll      =  4.395297e-17  
++ lln     =  1.370692e+00  lw      =  0.000000e+00  lwn     =  0.000000e+00  
++ lwl     =  0.000000e+00  wint    =  1.924185e-07  wl      =  0.000000e+00  
++ wln     =  1.000000e+00  ww      = -9.207185e-13  wwn     =  8.342567e-01  
++ wwl     =  0.000000e+00  nlev    =  2.000000e+00  kf      =  0.250000e-25
+
+.endl nominal
+
+.lib fast
+*  This file is for FAST conditions.
+*
+*  CMOS transistor models
+*       channel length                          0.35um ... 15um (NMOS)
+*                                               0.35um ... 15um (PMOS)
+*       channel width                           >= 1um
+*       nominal parameter values:
+*               threshold                               0.60V  (NMOS)
+*                                                       0.85V  (PMOS)
+*               oxide thickness                 6.5nm
+*       worst case tolerances (used in worst case models):
+*               channel length                  +/- 0.05um
+*               width                                   +/- 0.05um
+*               oxide thickness                 +/- 0.5nm
+*               threshold voltage                       +/- 40mV  (NMOS)
+*                                                       +/- 60mV  (PMOS)
+*
+* CASE LT: low Tox files (mismatch high)
+*
+.model nmos nmos level = 49
++ version =  3.11          acm     =  3             hdif    =  0.5e-6
++ mobmod  =  1.000000e+00  capmod  =  1.000000e+00  nqsmod  =  0.000000e+00  
++ tox     =  6.000000e-09  cdsc    =  1.000000e-10  cdscb   =  0.000000e+00  
++ cdscd   =  3.146578e-03  cit     = -1.165567e-03  nfactor =  2.067847e+00  
++ xj      =  2.000000e-07  vsat    =  1.733115e+05  at      =  4.587946e+04  
++ a0      =  1.208623e+00  ags     =  2.664144e-01  a1      =  0.000000e+00  
++ a2      =  3.926521e-01  keta    = -5.969015e-03  nch     =  3.053200e+17  
++ k1      =  7.221407e-01  kt1     = -2.968857e-01  kt1l    =  6.948321e-09  
++ kt2     = -2.439718e-02  k2      = -5.516670e-02  k3      = -2.348052e+00  
++ k3b     = -2.995700e+00  w0      =  0.000000e+00  nlx     =  2.343014e-07  
++ dvt0    =  1.904429e+01  dvt1    =  8.370073e-01  dvt2    =  6.252991e-03  
++ dvt0w   =  0.000000e+00  dvt1w   =  0.000000e+00  dvt2w   =  0.000000e+00  
++ drout   =  5.600000e-01  dsub    =  5.891755e-01  vth0    =  4.090000e-01  
++ ua      = -1.085785e-09  ua1     =  2.451017e-09  ub      =  2.210053e-18  
++ ub1     = -2.617479e-18  uc      =  3.755569e-11  uc1     =  2.640885e-13  
++ u0      =  3.324764e-02  ute     = -1.230449e+00  voff    = -8.793706e-02  
++ delta   =  9.688553e-03  rdsw    =  4.385596e+02  prwg    =  1.000000e-01  
++ prwb    = -7.964250e-02  prt     = -4.162666e+01  eta0    =  1.722893e-01  
++ etab    = -5.113721e-02  pclm    =  9.585992e-01  pdiblc1 =  2.537726e-12  
++ pdiblc2 = -3.312959e-04  pdiblcb = -1.000000e-03  pscbe1  =  5.656369e+08  
++ pscbe2  =  1.000000e-03  pvag    =  1.000001e-12  wr      =  9.107508e-01  
++ dwg     = -7.427878e-09  dwb     = -3.328336e-09  b0      =  1.598826e-07  
++ b1      =  5.141988e-17  alpha0  =  0.000000e+00  beta0   =  3.000000e+01  
++ elm     =  5.000000e+00  cgsl    =  0.000000e+00  cgdl    =  0.000000e+00  
++ ckappa  =  6.000000e-01  cf      =  1.500000e-10  clc     =  1.000000e-07  
++ cle     =  6.000000e-01  tnom    =  2.500000e+01  cgso    =  1.730000e-10  
++ cgdo    =  1.730000e-10  cgbo    =  0.000000e+00  xpart   =  1.000000e+00  
++ rsh     =  0.000000e+00  pb      =  5.112000e-01  mj      =  3.872000e-01  
++ mjsw    =  3.872000e-01  pbsw    =  5.112000e-01  cj      =  8.488000e-04  
++ cjsw    =  4.896000e-10  lint    =  1.944776e-08  ll      =  1.382235e-09  
++ lln     =  2.000000e-01  lw      =  0.000000e+00  lwn     =  0.000000e+00  
++ lwl     =  0.000000e+00  wint    =  1.347400e-07  wl      =  0.000000e+00  
++ wln     =  1.000000e+00  ww      = -7.781819e-14  wwn     =  1.000000e+00  
++ wwl     =  0.000000e+00  nlev    =  2.000000e+00  kf      =  0.500000e-25
+
+.model pmos pmos level = 49
++ version =  3.11          acm     =  3             hdif    =  0.5e-6
++ mobmod  =  1.000000e+00  capmod  =  1.000000e+00  nqsmod  =  0.000000e+00  
++ tox     =  6.000000e-09  cdsc    =  1.000000e-10  cdscb   =  0.000000e+00  
++ cdscd   =  0.000000e+00  cit     =  2.849258e-03  nfactor =  0.000000e+00  
++ xj      =  2.000000e-07  vsat    =  1.235253e+05  at      =  0.000000e+00  
++ a0      =  5.534111e-01  ags     =  0.000000e+00  a1      =  0.000000e+00  
++ a2      =  4.000000e-01  keta    = -4.742392e-03  nch     =  1.198869e+17  
++ k1      =  4.649430e-01  kt1     = -4.972940e-01  kt1l    =  0.000000e+00  
++ kt2     = -4.796538e-02  k2      =  1.579357e-02  k3      = -1.532555e+00  
++ k3b     = -1.426295e-01  w0      = -5.128171e-07  nlx     =  1.500000e-07  
++ dvt0    =  1.310824e+00  dvt1    =  2.383284e-01  dvt2    =  0.000000e+00  
++ dvt0w   =  0.000000e+00  dvt1w   =  0.000000e+00  dvt2w   =  0.000000e+00  
++ drout   =  3.972895e-01  dsub    =  4.287821e-01  vth0    = -0.746600e+00  
++ ua      = -7.838913e-10  ua1     =  4.158887e-09  ub      =  1.416209e-18  
++ ub1     = -3.635865e-18  uc      = -3.193134e-11  uc1     =  0.000000e+00  
++ u0      =  8.644306e-03  ute     =  0.000000e+00  voff    = -1.619864e-01  
++ delta   =  1.000000e-02  rdsw    =  1.393589e+03  prwg    = -7.131702e-02  
++ prwb    = -9.573077e-02  prt     =  0.000000e+00  eta0    =  5.324062e-02  
++ etab    =  0.000000e+00  pclm    =  1.294956e+00  pdiblc1 =  1.272241e-02  
++ pdiblc2 =  5.045117e-04  pdiblcb = -8.715370e-03  pscbe1  =  4.803844e+08  
++ pscbe2  =  1.000000e-08  pvag    =  0.000000e+00  wr      =  8.585317e-01  
++ dwg     = -1.637238e-08  dwb     = -3.444345e-09  b0      =  0.000000e+00  
++ b1      =  1.000000e-04  alpha0  =  0.000000e+00  beta0   =  3.000000e+01  
++ elm     =  5.000000e+00  cgsl    =  0.000000e+00  cgdl    =  0.000000e+00  
++ ckappa  =  6.000000e-01  cf      =  1.500000e-10  clc     =  1.000000e-07  
++ cle     =  6.000000e-01  tnom    =  2.500000e+01  cgso    =  4.370000e-10  
++ cgdo    =  4.370000e-10  cgbo    =  0.000000e+00  xpart   =  1.000000e+00  
++ rsh     =  0.000000e+00  pb      =  9.316000e-01  mj      =  4.845000e-01  
++ mjsw    =  4.845000e-01  pbsw    =  9.316000e-01  cj      =  1.117000e-03  
++ cjsw    =  4.764000e-10  lint    =  6.278428e-08  ll      =  4.395297e-17  
++ lln     =  1.370692e+00  lw      =  0.000000e+00  lwn     =  0.000000e+00  
++ lwl     =  0.000000e+00  wint    =  1.924185e-07  wl      =  0.000000e+00  
++ wln     =  1.000000e+00  ww      = -9.207185e-13  wwn     =  8.342567e-01  
++ wwl     =  0.000000e+00  nlev    =  2.000000e+00  kf      =  0.250000e-25
+*
+
+.endl fast
+
+.lib slow
+*  This file is for SLOW conditions (high tox ... mismatch low).
+*
+*  CMOS transistor models
+*       channel length                          0.35um ... 15um (NMOS)
+*                                               0.35um ... 15um (PMOS)
+*       channel width                           >= 1um
+*       nominal parameter values:
+*               threshold                               0.60V  (NMOS)
+*                                                       0.85V  (PMOS)
+*               oxide thickness                 6.5nm
+*       worst case tolerances (used in worst case models):
+*               channel length                  +/- 0.05um
+*               width                                   +/- 0.05um
+*               oxide thickness                 +/- 0.5nm
+*               threshold voltage                       +/- 40mV  (NMOS)
+*                                                       +/- 60mV  (PMOS)
+*
+* CASE HT: high Tox files (mismatch low)
+*
+.model nmos nmos level = 49
++ version =  3.11          acm     =  3             hdif    =  0.5e-6
++ mobmod  =  1.000000e+00  capmod  =  1.000000e+00  nqsmod  =  0.000000e+00  
++ tox     =  7.000000e-09  cdsc    =  1.000000e-10  cdscb   =  0.000000e+00  
++ cdscd   =  3.146578e-03  cit     = -1.165567e-03  nfactor =  2.067847e+00  
++ xj      =  2.000000e-07  vsat    =  1.733115e+05  at      =  4.587946e+04  
++ a0      =  1.208623e+00  ags     =  2.664144e-01  a1      =  0.000000e+00  
++ a2      =  3.926521e-01  keta    = -5.969015e-03  nch     =  3.053200e+17  
++ k1      =  8.424975e-01  kt1     = -2.968857e-01  kt1l    =  6.948321e-09  
++ kt2     = -2.439718e-02  k2      = -6.436116e-02  k3      = -2.348052e+00  
++ k3b     = -2.995700e+00  w0      =  0.000000e+00  nlx     =  2.343014e-07  
++ dvt0    =  1.904429e+01  dvt1    =  7.985093e-01  dvt2    =  6.252991e-03  
++ dvt0w   =  0.000000e+00  dvt1w   =  0.000000e+00  dvt2w   =  0.000000e+00  
++ drout   =  5.600000e-01  dsub    =  5.891755e-01  vth0    =  4.794305e-01  
++ ua      = -1.085785e-09  ua1     =  2.451017e-09  ub      =  2.210053e-18  
++ ub1     = -2.617479e-18  uc      =  3.755569e-11  uc1     =  2.640885e-13  
++ u0      =  3.324764e-02  ute     = -1.230449e+00  voff    = -8.793706e-02  
++ delta   =  9.688553e-03  rdsw    =  4.385596e+02  prwg    =  1.000000e-01  
++ prwb    = -7.964250e-02  prt     = -4.162666e+01  eta0    =  1.722893e-01  
++ etab    = -5.113721e-02  pclm    =  9.585992e-01  pdiblc1 =  2.537726e-12  
++ pdiblc2 = -3.312959e-04  pdiblcb = -1.000000e-03  pscbe1  =  5.656369e+08  
++ pscbe2  =  1.000000e-03  pvag    =  1.000001e-12  wr      =  9.107508e-01  
++ dwg     = -7.427878e-09  dwb     = -3.328336e-09  b0      =  1.598826e-07  
++ b1      =  5.141988e-17  alpha0  =  0.000000e+00  beta0   =  3.000000e+01  
++ elm     =  5.000000e+00  cgsl    =  0.000000e+00  cgdl    =  0.000000e+00  
++ ckappa  =  6.000000e-01  cf      =  1.000000e-11  clc     =  1.000000e-07  
++ cle     =  6.000000e-01  tnom    =  2.500000e+01  cgso    =  1.480000e-10  
++ cgdo    =  1.480000e-10  cgbo    =  0.000000e+00  xpart   =  1.000000e+00  
++ rsh     =  0.000000e+00  pb      =  5.112000e-01  mj      =  3.872000e-01  
++ mjsw    =  3.872000e-01  pbsw    =  5.112000e-01  cj      =  8.488000e-04  
++ cjsw    =  4.896000e-10  lint    = -1.450473e-08  ll      =  1.382235e-09  
++ lln     =  2.000000e-01  lw      =  0.000000e+00  lwn     =  0.000000e+00  
++ lwl     =  0.000000e+00  wint    =  1.347400e-07  wl      =  0.000000e+00  
++ wln     =  1.000000e+00  ww      = -7.781819e-14  wwn     =  1.000000e+00  
++ wwl     =  0.000000e+00  nlev    =  2.000000e+00  kf      =  0.500000e-25
+
+.model pmos pmos level = 49
++ version =  3.11          acm     =  3             hdif    =  0.5e-6
++ mobmod  =  1.000000e+00  capmod  =  1.000000e+00  nqsmod  =  0.000000e+00  
++ tox     =  7.000000e-09  cdsc    =  1.000000e-10  cdscb   =  0.000000e+00  
++ cdscd   =  0.000000e+00  cit     =  2.849258e-03  nfactor =  0.000000e+00  
++ xj      =  2.000000e-07  vsat    =  1.235253e+05  at      =  0.000000e+00  
++ a0      =  5.534111e-01  ags     =  0.000000e+00  a1      =  0.000000e+00  
++ a2      =  4.000000e-01  keta    = -4.742392e-03  nch     =  1.198869e+17  
++ k1      =  5.424334e-01  kt1     = -4.972940e-01  kt1l    =  0.000000e+00  
++ kt2     = -4.796538e-02  k2      =  1.842583e-02  k3      = -1.532555e+00  
++ k3b     = -1.426295e-01  w0      = -5.128171e-07  nlx     =  1.500000e-07  
++ dvt0    =  1.326518e+00  dvt1    =  2.383284e-01  dvt2    =  0.000000e+00  
++ dvt0w   =  0.000000e+00  dvt1w   =  0.000000e+00  dvt2w   =  0.000000e+00  
++ drout   =  3.972895e-01  dsub    =  4.287821e-01  vth0    = -8.270000e-01  
++ ua      = -7.838913e-10  ua1     =  4.158887e-09  ub      =  1.416209e-18  
++ ub1     = -3.635865e-18  uc      = -3.193134e-11  uc1     =  0.000000e+00  
++ u0      =  8.644306e-03  ute     =  0.000000e+00  voff    = -1.619864e-01  
++ delta   =  1.000000e-02  rdsw    =  1.393589e+03  prwg    = -7.131702e-02  
++ prwb    = -9.573077e-02  prt     =  0.000000e+00  eta0    =  5.324062e-02  
++ etab    =  0.000000e+00  pclm    =  1.294956e+00  pdiblc1 =  1.272241e-02  
++ pdiblc2 =  5.045117e-04  pdiblcb = -8.715370e-03  pscbe1  =  4.803844e+08  
++ pscbe2  =  1.000000e-08  pvag    =  0.000000e+00  wr      =  8.585317e-01  
++ dwg     = -1.637238e-08  dwb     = -3.444345e-09  b0      =  0.000000e+00  
++ b1      =  1.000000e-04  alpha0  =  0.000000e+00  beta0   =  3.000000e+01  
++ elm     =  5.000000e+00  cgsl    =  0.000000e+00  cgdl    =  0.000000e+00  
++ ckappa  =  6.000000e-01  cf      =  1.000000e-11  clc     =  1.000000e-07  
++ cle     =  6.000000e-01  tnom    =  2.500000e+01  cgso    =  3.750000e-10  
++ cgdo    =  3.750000e-10  cgbo    =  0.000000e+00  xpart   =  1.000000e+00  
++ rsh     =  0.000000e+00  pb      =  9.316000e-01  mj      =  4.845000e-01  
++ mjsw    =  4.845000e-01  pbsw    =  9.316000e-01  cj      =  1.117000e-03  
++ cjsw    =  4.764000e-10  lint    =  3.911449e-08  ll      =  4.395297e-17  
++ lln     =  1.370692e+00  lw      =  0.000000e+00  lwn     =  0.000000e+00  
++ lwl     =  0.000000e+00  wint    =  1.924185e-07  wl      =  0.000000e+00  
++ wln     =  1.000000e+00  ww      = -9.207185e-13  wwn     =  8.342567e-01  
++ wwl     =  0.000000e+00  nlev    =  2.000000e+00  kf      =  0.250000e-25
+
+.endl slow
+
+
+.lib passive
+
+*****************************************************************************
+* well-to-substrate diode
+
+.model dwell d cj0=1e-4 is=1e-5 m=0.5 bv=40
+
+*****************************************************************************
+* parasitic vertical pnp
+
+.model vpnp pnp bf=8 is=1e-17 rb=1200 rc=3000 vaf=35
+
+*****************************************************************************
+* capacitors
+* note: tc and vc not modelled!
+
+.subckt cpoly top bot topgnd botgnd c=1pF
+ctop top topgnd '0.01*c'
+cbot bot botgnd '0.12*c'
+.ends
+
+.subckt cm2 top bot topgnd botgnd c=1pF
+cc top bot c
+ctop top topgnd '0.01*c'
+cbot bot botgnd '1.2*c'
+.ends
+
+.subckt cm4 top bot topgnd botgnd c=1pF
+cc top bot c
+ctop top topgnd '0.01*c'
+cbot bot botgnd '0.2*c'
+.ends
+
+.endl passive
+
+
