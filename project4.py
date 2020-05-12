@@ -6,11 +6,6 @@
 # the spice .sp files for each iteration of fan and inverters.  After each .sp file is created
 # using the subprocess command to output a text so unix will run the .sp file with hspice
 # The code is iterated to find the smallest time delay
-#******** **********************************************************************
-# I've been debugging this for a while, the createing a new spice file works beautifully
-# but the part that is not working is the running hspice part, in the servers the code would execute at
-# times, then the next time without changing anything, errors would pop up, programming errors
-# or errors pertaining to numpy ndarray datatypes.  I feel like my code should execute it
 ################################################################################
 
 import numpy as np  # package needed to read the results file
