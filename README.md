@@ -1,4 +1,4 @@
-# scrptinghspice-python
+# scripting-hspice-python
 Built a python scripts that automates running hspice.  Given a parameter value
 for the number of fans and inverters, the code is designed to also automate creating
 the spice .sp files for each iteration of fan and inverters.  After each .sp file is created
