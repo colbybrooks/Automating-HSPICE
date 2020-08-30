@@ -1,4 +1,4 @@
-# Automating-Hspice
+# Automating-HSPICE
 
 Built a python script that automates running hspice.  Given a parameter value
 for the number of fans and inverters, the code is designed to also automate creating
